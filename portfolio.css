@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  background-image: url("background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-blend-mode: luminosity;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+header ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+header li {
+  margin: 10px 20px;
+}
+
+header a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+header a:hover {
+  color: #ff5722;
+}
+
+section {
+  text-align: center;
+  padding: 40px;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 90vh;
+}
+
+@keyframes lightening {
+  0% {
+    color: #fff;
+    text-shadow: #f0f0f0;
+  }
+  50% {
+    color: rgba(255, 166, 0, 0.689);
+    text-shadow: 0 0 10px rgba(255, 87, 34, 0.7);
+  }
+  100% {
+    color: #fff;
+    text-shadow: none;
+  }
+}
+
+section p {
+  font-size: 25px;
+  margin: 0;
+  margin-top: 10px;
+  text-align: left;
+  flex-basis: 100%;
+  animation: lightening 2s infinite;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.paragraph {
+  font-size: medium;
+}
+section .content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+section img {
+  max-width: 200px;
+  border-radius: 50%;
+  margin-left: 10px;
+  box-shadow: 10px 8px 10px 5px rgba(255, 166, 0, 0.422);
+}
+#cards .content > div {
+  padding: 10px;
+  flex: 1;
+}
+
+#cards .wrapper > div img {
+  max-width: 100%;
+}
+
+#items {
+  display: flex;
+  align-items: flex-end;
+  align-content: flex-end;
+  justify-content: flex-start;
+  gap: 3px;
+  flex-direction: left;
+  flex-wrap: nowrap;
+}
+
+#items .social-icons {
+  margin-bottom: 40px;
+  max-width: 30px;
+  order: 3;
+}
+
+footer .social-icons a img {
+  max-width: 25px;
+}
+.social-icons a img:hover {
+  color: #ff5722;
+}

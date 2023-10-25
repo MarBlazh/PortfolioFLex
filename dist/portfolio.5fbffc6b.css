@@ -1,0 +1,131 @@
+body {
+  background-blend-mode: luminosity;
+  background-color: #f0f0f0;
+  background-image: url("background.fe40e636.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+}
+
+header {
+  color: #fff;
+  background-color: #333;
+  padding: 20px;
+}
+
+header ul {
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+header li {
+  margin: 10px 20px;
+}
+
+header a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color .3s ease-in-out;
+}
+
+header a:hover {
+  color: #ff5722;
+}
+
+section {
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  height: 90vh;
+  padding: 40px;
+  display: flex;
+}
+
+@keyframes lightening {
+  0% {
+    color: #fff;
+    text-shadow: #f0f0f0;
+  }
+
+  50% {
+    color: #ffa600b0;
+    text-shadow: 0 0 10px #ff5722b3;
+  }
+
+  100% {
+    color: #fff;
+    text-shadow: none;
+  }
+}
+
+section p {
+  text-align: left;
+  flex-basis: 100%;
+  margin: 10px 0 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 25px;
+  animation: 2s infinite lightening;
+}
+
+.paragraph {
+  font-size: medium;
+}
+
+section .content {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  display: flex;
+}
+
+section img {
+  border-radius: 50%;
+  max-width: 200px;
+  margin-left: 10px;
+  box-shadow: 10px 8px 10px 5px #ffa6006c;
+}
+
+#cards .content > div {
+  flex: 1;
+  padding: 10px;
+}
+
+#cards .wrapper > div img {
+  max-width: 100%;
+}
+
+#items {
+  flex-direction: left;
+  flex-wrap: nowrap;
+  place-content: flex-end flex-start;
+  align-items: flex-end;
+  gap: 3px;
+  display: flex;
+}
+
+#items .social-icons {
+  order: 3;
+  max-width: 30px;
+  margin-bottom: 40px;
+}
+
+footer .social-icons a img {
+  max-width: 25px;
+}
+
+.social-icons a img:hover {
+  color: #ff5722;
+}
+
+/*# sourceMappingURL=portfolio.5fbffc6b.css.map */
